@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MySite – Contact</title>
+  <meta name="description" content="Contattami tramite il form.">
+  <meta name="keywords" content="contatti, form, email">
+  <meta name="author" content="Tuo Nome">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="theme-toggle" aria-label="Toggle dark mode">🌓</button>
+  </header>
+
+  <main>
+    <h1>Contact</h1>
+    <form action="#" method="post">
+      <div>
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="message">Message</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <div>
+        <button type="submit">Send</button>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Tuo Nome</p>
+  </footer>
+
+  <button id="to-top" title="Torna su">↑</button>
+  <script src="script.js" defer></script>
+</body>
+</html>
